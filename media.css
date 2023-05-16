@@ -1,0 +1,68 @@
+@media screen and (max-width: 768px){
+    header{
+        z-index: 1;
+        background-color: #f9f9f9;
+        
+
+    }
+
+    nav ul li a {
+        color: black;
+        transition: .5s all;
+        border-bottom: 0px solid yellow;
+    }
+
+    nav{
+        position: sticky;
+    }
+
+    .logo{
+        font-family: bebas neue;
+        font-size: 32px;
+        color: black;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);        
+    }
+
+    .nav-links{
+        flex-direction: column;
+        position: fixed;       
+        border-top: 2px solid yellow;
+        top: 90px;
+        left: 100%;
+        background-color: aliceblue;
+        justify-content: left;
+        text-align: left;
+        align-items:  baseline;
+        width: 100%;
+        transition: 0.3s all ease-in-out;
+       -webkit-transition: 0.3s all ease-in-out;
+    }
+
+    .nav-items{
+        display: block;
+        padding: 5px 0;
+        
+    }
+
+    .nav-links.active {        
+        left: 0px;               
+        z-index: -12;
+    }
+
+    .project{
+        flex-direction: column;
+    }
+}
